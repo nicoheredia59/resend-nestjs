@@ -36,3 +36,6 @@ $ npm run test:cov
 
 ## Api Roues
 Check '/api' route to view swagger docs
+
+## Env
+Create a .env file, there's an .env.example so you can copy and add the resend environment variable.
