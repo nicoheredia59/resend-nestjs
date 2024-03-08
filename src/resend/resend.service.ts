@@ -11,8 +11,8 @@ export class ResendService {
     return await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: sendEmailDto.to, // By default, Resend only allows you to send emails to your email account.
-      subject: `${sendEmailDto.name} - ${sendEmailDto.subject}`,
-      html: '<p>Congrats on sending your <strong>first email</strong>!</p>',
+      subject: `${sendEmailDto.name} ${sendEmailDto.subject}`,
+      html: sendEmailDto.html,
       // react: <EmailTemplate /> <- Add your Mail Template.
     });
   }
